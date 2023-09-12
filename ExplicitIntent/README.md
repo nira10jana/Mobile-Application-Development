@@ -145,7 +145,7 @@ protected void onCreate(Bundle savedInstanceState) {
             intent.putExtra("key", factorial);
             startActivity(intent);
         }
-    });
+    }
 }
 
 private int calculateFactorial(int number) {
