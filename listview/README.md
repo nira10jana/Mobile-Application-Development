@@ -1,4 +1,4 @@
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/e4de8fad-3687-421c-95aa-5748232886d1)
+
 # Ex.No:7 Develop an android application to display the place name with image using list view in android studio.
 
 
