@@ -61,7 +61,7 @@ tools:context=".MainActivity">
 
 ~~~
 
-MainActivity.java:
+## MainActivity.java:
 
 package com.example.optionmenu;
 
@@ -120,6 +120,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 ~~~
 }
 ## Option_View.xml:
+~~~
 
 <item
     android:id="@+id/menu_item_1"
@@ -133,6 +134,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
     android:id="@+id/menu_item_3"
     android:title="Option 3"
     android:textSize="25dp"/>
+~~~
 
 
 ## OUTPUT
