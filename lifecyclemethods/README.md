@@ -96,8 +96,6 @@ protected void onDestroy() {
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/81d03f14-7fb4-43d2-8747-d4c7043d7fb4)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/5813ce4c-da3d-4528-9fb4-f4f704ce391d)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/1933f265-7071-45cb-b0b1-b98c4ae3f592)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/d36720d9-2c4d-4a18-9390-0a305c003b4e)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/c6525b37-c1aa-4362-91bd-5a364c7af879)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/1d597bac-1606-4254-a420-41ca2580404a)
+
 ## RESULT
 Thus a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
