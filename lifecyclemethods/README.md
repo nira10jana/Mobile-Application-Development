@@ -93,8 +93,6 @@ protected void onDestroy() {
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/c65b967f-2d6a-44b1-8a74-adb5f832f573)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/1a256e86-8e5e-40c5-b095-6aff7df6b68a)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/f208dfb7-fd86-4e64-888f-8a57ef50120c)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/81d03f14-7fb4-43d2-8747-d4c7043d7fb4)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/5813ce4c-da3d-4528-9fb4-f4f704ce391d)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/1933f265-7071-45cb-b0b1-b98c4ae3f592)
 
 ## RESULT
