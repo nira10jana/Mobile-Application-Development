@@ -30,14 +30,86 @@ Step 7: Save and run the application.
 ```
 /*
 Program to create and design an android application that draws basic graphical primitives on the screen.
-Developed by:
-Registeration Number :
+Developed by:NIRANJANA DEVI .S
+Registeration Number :212221220036
 */
 ```
 
+## Activity_main.xml:
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+~~~
+xmlns:app="http://schemas.android.com/apk/res-auto"
+            
+xmlns:tools="http://schemas.android.com/tools"
+            
+android:layout_width="match_parent"
+            
+android:layout_height="match_parent"
+            
+tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:srcCompat="@tools:sample/avatars" />
+~~~
+## MainActivity.java:
+
+package com.example.shapes;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Bitmap;
+
+import android.graphics.Canvas;
+
+import android.graphics.Color;
+
+import android.graphics.Paint;
+
+import android.graphics.drawable.BitmapDrawable;
+
+import android.os.Bundle;
+
+import android.widget.ImageView;
+
+public class MainActivity extends AppCompatActivity {
+~~~
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    try {
+        Bitmap bitmap = Bitmap.createBitmap(720, 1280, Bitmap.Config.ARGB_8888);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setBackground(new BitmapDrawable(getResources(), bitmap));
+        Canvas canvas = new Canvas(bitmap);
+        Paint paint = new Paint();
+        paint.setColor(Color.BLUE);
+        paint.setTextSize(50);
+        canvas.drawText("Rectangle", 420, 150, paint);
+        canvas.drawRect(400, 200, 650, 700, paint);
+        canvas.drawText("Circle", 120, 150, paint);
+        canvas.drawCircle(200, 350, 150, paint);
+        canvas.drawText("Square", 120, 800, paint);
+        canvas.drawRect(50, 850, 350, 1150, paint);
+        canvas.drawText("Line", 420, 800, paint);
+        canvas.drawLine(520, 850, 520, 1150, paint);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+~~~
 ## OUTPUT
 
+![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/d8d9e343-c10a-4390-8309-6766db62f6d3)
 
+![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/de74f137-b69a-40b6-9b63-4c60ff165424)
+
+![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/7e000c7b-ba90-45f9-bfa1-be1537a72087)
 
 
 ## RESULT
