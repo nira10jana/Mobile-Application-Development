@@ -18,6 +18,7 @@ Developed by:
 Registeration Number :
 */
 ## Activity_main.xml:
+~~~
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
