@@ -86,13 +86,7 @@ protected void onDestroy() {
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/6ba4e38a-e8f3-4937-9c04-fcf4dbabd961)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/52524ec7-b364-40ce-b1a6-c05900058e36)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/746bdd6e-8d19-45a2-9e12-85a61cada556)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/9e039748-c381-4efd-8b66-1ae87a442df2)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/0efe15b2-bedf-4807-aff3-f57032a1044d)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/77f103d1-1316-4e95-bdcc-10a06a7bc617)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/5e3c4613-7713-49e7-8efe-565423818830)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/c65b967f-2d6a-44b1-8a74-adb5f832f573)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/1a256e86-8e5e-40c5-b095-6aff7df6b68a)
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/f208dfb7-fd86-4e64-888f-8a57ef50120c)
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/1933f265-7071-45cb-b0b1-b98c4ae3f592)
 
 ## RESULT
