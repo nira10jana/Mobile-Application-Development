@@ -137,7 +137,9 @@ if (requestCode == REQUEST_READ_CONTACTS) {
         </intent-filter>
     </activity>
 </application>
+
 ## OUTPUT
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/ec6a92d8-f2d1-4852-bdaa-cc85df63012c)
+
 ## RESULT
 Thus a Simple Android Application create your own content providers to get contacts details using Android Studio is developed and executed successfully.
