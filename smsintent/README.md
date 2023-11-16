@@ -1,57 +1,29 @@
-
 # Ex.No:6 Design an android application Send SMS using Intent.
-
-
 ## AIM:
-
 To create and design an android application Send SMS using Intent using Android Studio.
-
 ## EQUIPMENTS REQUIRED:
-
 Android Studio(Latest Version)
-
 ## ALGORITHM:
-
 Step 1: Open Android Stdio and then click on File -> New -> New project.
-
 Step 2: Then type the Application name as smsintent and click Next. 
-
 Step 3: Then select the Minimum SDK as shown below and click Next.
-
 Step 4: Then select the Empty Activity and click Next. Finally click Finish.
-
 Step 5: Design layout in activity_main.xml.
-
 Step 6: Send SMS and Display details give in MainActivity file.
-
 Step 7: Save and run the application.
-
 ## PROGRAM:
-```
 /*
 Program to create and design an android application Send SMS using Intent.
 Developed by: NIRANJANA DEVI S
 Registeration Number : 212221220036
 */
-```
-
 ## Activity_main.xml:
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-~~~
-
 xmlns:app="http://schemas.android.com/apk/res-auto"
-
 xmlns:tools="http://schemas.android.com/tools"
-
 android:layout_width="match_parent"
-
 android:layout_height="match_parent"
-
 tools:context=".MainActivity">
-
-
 <TextView
     android:id="@+id/textView3"
     android:layout_width="205dp"
@@ -62,7 +34,6 @@ tools:context=".MainActivity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
-
 <EditText
     android:id="@+id/phone_number_edittext"
     android:layout_width="296dp"
@@ -74,7 +45,6 @@ tools:context=".MainActivity">
     app:layout_constraintHorizontal_bias="0.494"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
 <TextView
     android:id="@+id/textView4"
     android:layout_width="233dp"
@@ -85,7 +55,6 @@ tools:context=".MainActivity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/phone_number_edittext" />
-
 <EditText
     android:id="@+id/message_edittext"
     android:layout_width="310dp"
@@ -97,7 +66,6 @@ tools:context=".MainActivity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
 <Button
     android:id="@+id/send_button"
     android:layout_width="wrap_content"
@@ -109,56 +77,34 @@ tools:context=".MainActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/message_edittext"
     app:layout_constraintVertical_bias="0.373" />
-
-~~~
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
 ## MainActivity.java:
-
+~~~
 package com.example.sms;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.core.app.ActivityCompat;
-
 import androidx.core.content.ContextCompat;
-
 import android.Manifest;
-
 import android.content.Intent;
-
 import android.content.pm.PackageManager;
-
 import android.net.Uri;
-
 import android.os.Bundle;
-
 import android.view.View;
-
 import android.widget.Button;
-
 import android.widget.EditText;
-
 import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity {
 ~~~
-
 private static final int PERMISSION_REQUEST_SEND_SMS = 123;
-
 private EditText phoneNumberEditText, messageEditText;
 private Button sendButton;
-
 @Override
 protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
+super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
     phoneNumberEditText = findViewById(R.id.phone_number_edittext);
     messageEditText = findViewById(R.id.message_edittext);
     sendButton = findViewById(R.id.send_button);
-
     sendButton.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v) {
@@ -175,13 +121,11 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     });
 }
-
 private void sendSMS(String phoneNumber, String message) {
     Intent smsIntent = new Intent(Intent.ACTION_SENDTO);
     smsIntent.setData(Uri.parse("smsto:" + phoneNumber));
     smsIntent.putExtra("sms_body", message);
-
-    if (smsIntent.resolveActivity(getPackageManager()) != null) {
+   if (smsIntent.resolveActivity(getPackageManager()) != null) {
         startActivity(smsIntent);
     } else {
         Toast.makeText(this, "No messaging app found.", Toast.LENGTH_SHORT).show();
@@ -200,19 +144,12 @@ public void onRequestPermissionsResult(int requestCode, String[] permissions, in
         }
     }
 }
-~~~
 }
-
 ## AndroidManifest.xml:
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 ~~~
-
 xmlns:tools="http://schemas.android.com/tools">
-
 <uses-permission android:name="android.permission.SEND_SMS" />
-
-
 <application
     android:allowBackup="true"
     android:dataExtractionRules="@xml/data_extraction_rules"
@@ -233,17 +170,8 @@ xmlns:tools="http://schemas.android.com/tools">
     </activity>
 </application>
 ~~~
-
 ## OUTPUT
-
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/fd2b2537-3824-4540-9b28-8e11f0317d03)
-
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/063ab174-6405-44f7-a33c-548d8464bb8a)
-
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/f029412a-973c-461c-a254-dd79f405d3f7)
-
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/cd9db9c9-22f2-463b-bc2f-ba9e6874e5b5)
-
-
 ## RESULT
 Thus a Simple Android Application create and design an android application Send SMS using Intent using Android Studio is developed and executed successfully.
