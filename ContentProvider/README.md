@@ -47,6 +47,7 @@ tools:context=".MainActivity">
     android:textAppearance="?android:textAppearanceMedium" />
 </androidx.constrain tlayout.widget.ConstraintLayout>
 ## MainActivity.java:
+~~~
 package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -137,6 +138,7 @@ if (requestCode == REQUEST_READ_CONTACTS) {
         </intent-filter>
     </activity>
 </application>
+~~~
 
 ## OUTPUT
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/ec6a92d8-f2d1-4852-bdaa-cc85df63012c)
