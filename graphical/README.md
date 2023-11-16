@@ -69,7 +69,6 @@ try {
 }
 ~~~
 ## OUTPUT
-![ex11 4](https://github.com/Aishwarya-TM/Mobile-Application-Development/assets/127846109/815b211f-e2d7-4151-97e6-03818a786c6c)
 ![ex11 5](https://github.com/Aishwarya-TM/Mobile-Application-Development/assets/127846109/2b5e4f0a-9162-4551-ba5c-1fa17adeea9d)
 ## RESULT
 Thus a Simple Android Application to create and design an android application that draws basic graphical primitives on the screen using Android Studio is developed and executed successfully.
