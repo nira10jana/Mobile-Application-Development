@@ -1,4 +1,4 @@
-# Ex.No:12 Design an application that draws basic graphical primitives on the screen.
+# Ex.No: 11 Develop a application to add animations to ImageView,Move,blink,fade,clockwise,zoom,slide operations are perform in android studio.
 ## AIM:
 To create and design an android application that draws basic graphical primitives on the screen using Android Studio.
 ## EQUIPMENTS REQUIRED:
@@ -69,6 +69,7 @@ try {
 }
 ~~~
 ## OUTPUT
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/7e000c7b-ba90-45f9-bfa1-be1537a72087)
+![ex11 4](https://github.com/Aishwarya-TM/Mobile-Application-Development/assets/127846109/815b211f-e2d7-4151-97e6-03818a786c6c)
+![ex11 5](https://github.com/Aishwarya-TM/Mobile-Application-Development/assets/127846109/2b5e4f0a-9162-4551-ba5c-1fa17adeea9d)
 ## RESULT
 Thus a Simple Android Application to create and design an android application that draws basic graphical primitives on the screen using Android Studio is developed and executed successfully.
