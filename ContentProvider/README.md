@@ -1,56 +1,29 @@
-
 # Ex.No:5 Create Your Own Content Providers to get Contacts details.
-
-
 ## AIM:
-
 To create your own content providers to get contacts details using Android Studio.
-
 ## EQUIPMENTS REQUIRED:
-
 Android Studio(Latest Version)
-
 ## ALGORITHM:
-
 Step 1: Open Android Stdio and then click on File -> New -> New project.
-
 Step 2: Then type the Application name as “contentprovider″ and click Next. 
-
 Step 3: Then select the Minimum SDK as shown below and click Next.
-
 Step 4: Then select the Empty Activity and click Next. Finally click Finish.
-
 Step 5: Design layout in activity_main.xml.
-
 Step 6: Get contacts details and Display details give in MainActivity file.
-
 Step 7: Save and run the application.
-
 ## PROGRAM:
-```
 /*
 Program to print the text create your own content providers to get contacts details.
 Developed by: NIRANJANA DEVI S
 Registeration Number : 212221220036
 */
-```
-
 ## Activity_main.xml:
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-~~~
-
 xmlns:app="http://schemas.android.com/apk/res-auto"
-
 xmlns:tools="http://schemas.android.com/tools"
-
 android:layout_width="match_parent"
-
 android:layout_height="match_parent"
-
 tools:context=".MainActivity">
-
 <Button
     android:id="@+id/button"
     android:layout_width="wrap_content"
@@ -62,7 +35,6 @@ tools:context=".MainActivity">
     app:layout_constraintHorizontal_bias="0.497"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
-
 <TextView
     android:id="@+id/textView"
     android:layout_width="0dp"
@@ -73,52 +45,30 @@ tools:context=".MainActivity">
     app:layout_constraintBottom_toBottomOf="parent"
     android:layout_marginTop="16dp"
     android:textAppearance="?android:textAppearanceMedium" />
-
-~~~
 </androidx.constrain tlayout.widget.ConstraintLayout>
-
 ## MainActivity.java:
-
 package com.example.myapplication;
-
 import androidx.annotation.NonNull;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.core.app.ActivityCompat;
-
 import androidx.core.content.ContextCompat;
-
 import android.Manifest;
-
 import android.content.pm.PackageManager;
-
 import android.database.Cursor;
-
 import android.net.Uri;
-
 import android.os.Bundle;
-
 import android.provider.ContactsContract;
-
 import android.widget.Button;
-
 import android.widget.TextView;
-
 import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity { private static final int REQUEST_READ_CONTACTS = 1; Button btnFetchContacts; TextView txtContacts;
-
-~~~
-
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     btnFetchContacts = findViewById(R.id.button);
     txtContacts = findViewById(R.id.textView);
-
-    btnFetchContacts.setOnClickListener(v -> {
+ btnFetchContacts.setOnClickListener(v -> {
         if (ContextCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(MainActivity.this,
@@ -129,20 +79,16 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     });
 }
-
 private void fetchContacts() {
     StringBuilder contactsBuilder = new StringBuilder();
     Uri uri = ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
     String[] projection = {ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
             ContactsContract.CommonDataKinds.Phone.NUMBER};
-
-    Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
-
-    if (cursor != null) {
+ Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
+if (cursor != null) {
         int nameIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
         int numberIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
-
-        while (cursor.moveToNext()) {
+while (cursor.moveToNext()) {
             if (nameIndex != -1 && numberIndex != -1) {
                 String name = cursor.getString(nameIndex);
                 String number = cursor.getString(numberIndex);
@@ -154,12 +100,10 @@ private void fetchContacts() {
         txtContacts.setText(contactsBuilder.toString());
     }
 }
-
 @Override
 public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-    if (requestCode == REQUEST_READ_CONTACTS) {
+if (requestCode == REQUEST_READ_CONTACTS) {
         if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             // Permission is granted, fetch contacts
             fetchContacts();
@@ -169,17 +113,10 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
         }
     }
 }
-
-~~~
 }
-
 ## AndroidManifest.xml
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-~~~
-
-xmlns:tools="http://schemas.android.com/tools">
-
+<xmlns:tools="http://schemas.android.com/tools">
 <uses-permission android:name="android.permission.READ_CONTACTS" />
 <application
     android:allowBackup="true"
@@ -200,15 +137,7 @@ xmlns:tools="http://schemas.android.com/tools">
         </intent-filter>
     </activity>
 </application>
-~~~
-
 ## OUTPUT
-
-
-![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/8e37f36d-6e79-459f-99d9-27c36073b5ab)
-
 ![image](https://github.com/nira10jana/Mobile-Application-Development/assets/141748873/ec6a92d8-f2d1-4852-bdaa-cc85df63012c)
-
-
 ## RESULT
 Thus a Simple Android Application create your own content providers to get contacts details using Android Studio is developed and executed successfully.
